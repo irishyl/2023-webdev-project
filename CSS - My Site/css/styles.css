@@ -1,0 +1,116 @@
+/**************************TAG SELECTINOS**************************/
+body {
+    color: #40514E;
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    color: #674188;
+    margin: 50px auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    line-height: 2;
+}
+
+h2 {
+    color: #674188;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+h3 {
+    color: #C3ACD0;
+    font-family: 'Montserrat', sans-serif;
+    left: 200px;
+}
+
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 10px;
+    border-color: #EAF6F6;
+    width: 20%;
+}
+
+
+/**************************CLASS SELECTINOS**************************/
+.bottom-cloud {
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+}
+
+.bottom-container {
+    background-color: #674188;
+    color: #EAF6F6;
+    padding: 50px;
+
+}
+
+.btn {
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 20px;
+    background: #674188;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-top: 50px;
+}
+  
+.btn:hover {
+    background: #C3ACD0;
+    text-decoration: none;
+}
+
+.contact-message {
+    margin: 50px auto 60px;
+}
+
+.footer-link {
+    color: #C3ACD0;
+    padding: 20px;
+}
+
+.img-computer {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.img-chef {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+.middle-container {
+    padding: 50px;
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.top-container {
+    background-color: #E5E0FF;
+    position: relative;
+    padding-top: 100px;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 50px;
+}

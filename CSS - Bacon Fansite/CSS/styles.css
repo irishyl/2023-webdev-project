@@ -1,0 +1,29 @@
+/*********************************TAG SELECTORS*****************************/
+/* Most Browsers have default setting  */
+h1 {    
+    color: red;
+    font-size: 100px;
+}
+
+img:hover{
+    background-color: yellow;
+}
+
+
+/*********************************CLASS SELECTORS*****************************/
+.bacon {
+    background-color: red;
+}
+
+.broccoli {
+    background-color: green;
+}
+
+.circular {
+    border-radius: 100%;
+}
+
+/*********************************ID SELECTORS*****************************/
+#headings{
+    color: blue;
+}
