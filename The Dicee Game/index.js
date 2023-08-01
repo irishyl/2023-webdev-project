@@ -1,26 +1,31 @@
 // change img1 randomly according to the numbers
 var randomNumber1 = Math.floor(Math.random() * 6) + 1
 var imageSource1 = "images/dice" + randomNumber1 + ".png";
-document.querySelector(".img1").setAttribute('src',imageSource1);
+$(".img1").attr('src', imageSource1);
+// document.querySelector(".img1").setAttribute('src',imageSource1);
 
 
 
 // change img2 randomly according to the numbers
 var randomNumber2 = Math.floor(Math.random() * 6) + 1
 var imageSource2 = "images/dice" + randomNumber2 + ".png";
-document.querySelector(".img2").setAttribute('src', imageSource2);
+$(".img2").attr('src', imageSource2);
+// document.querySelector(".img2").setAttribute('src', imageSource2);
 
 
 
 // reflect the results to h1
 if(randomNumber1 > randomNumber2){
-    document.querySelector('h1').innerHTML = "🚩 Player1 Wins!"
+    $("h1").text("🚩 Player1 Wins!");
+    // document.querySelector('h1').innerHTML = "🚩 Player1 Wins!"
 }
 else if(randomNumber1 < randomNumber2){
-    document.querySelector('h1').innerHTML = "Player2 Wins! 🚩"
+    $("h1").text("Player2 Wins! 🚩");
+    // document.querySelector('h1').innerHTML = "Player2 Wins! 🚩"
 }
 else{
-    document.querySelector('h1').innerHTML = "Draw!"
+    $("h1").text("Draw!");
+    // document.querySelector('h1').innerHTML = "Draw!"
 }
 
 
