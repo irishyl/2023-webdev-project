@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" href="images/favicon-32x32.png">
+    <title>To-Do list</title>
+</head>
+
+<body>
+    <div class="todo-app">
+        <h2>My To-Do List</h2>
+        <h6><%= today %></h6>
+        <div class="row">
+            <!-- action = where the form is submitting to -->
+            <form action="/" method="post" class="input-form">
+                <input type="text" name="newItem" class="input-box" placeholder="What's new?" autocomplete="off">
+                <button type="submit" class="add-button">Add</button>
+            </form>
+        </div>
+        <ul>
+            <% for(let i = 0; i < newListItems.length; i++){ %>
+                <div class="task-container-big">
+                    <div class="task-container-small">
+                        <form action="/check" method="post">
+                            <input type="hidden" name="taskIndex" value="<%= i %>">
+                            <button type="submit" class="check-button">
+                                <img src="<%= newListItems[i].checked ? '/images/checked.png' : '/images/unchecked.png' %>" alt="Check">
+                            </button>
+                        </form>
+                        <li class="<%= newListItems[i].checked ? 'checked' : '' %>">
+                            <%= newListItems[i].task %>
+                        </li>
+
+                    </div>
+                    <form action="/delete" method="post" class="delete-form">
+                        <input type="hidden" name="taskIndex" value="<%= i %>">
+                        <button type="submit" class="delete-button">Delete</button>
+                    </form>
+                </div>
+            <% } %>
+        </ul>
+    </div>
+
+  
+  <footer></footer>
+</body>
+</html>
